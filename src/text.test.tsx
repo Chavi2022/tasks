@@ -4,6 +4,7 @@ import App from "./App";
 
 test("renders the text 'Hello World' somewhere", () => {
     render(<App />);
+    console.log("Hello World");
     const texts = screen.getAllByText(/Hello World/);
     expect(texts.length).toBeGreaterThanOrEqual(1);
 });
