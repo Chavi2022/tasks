@@ -635,7 +635,7 @@ describe("Testing the Question[] functions", () => {
         expect(publishAll(SIMPLE_QUESTIONS_2)).toEqual(SIMPLE_QUESTIONS_2);
     });
 
-    test("(3 pts) Testing the sameType function", () => {
+    test("Testing the sameType function", () => {
         expect(sameType([])).toEqual(true);
         expect(sameType(BLANK_QUESTIONS)).toEqual(false);
         expect(sameType(SIMPLE_QUESTIONS)).toEqual(false);
@@ -644,7 +644,7 @@ describe("Testing the Question[] functions", () => {
         expect(sameType(SIMPLE_QUESTIONS_2)).toEqual(true);
     });
 
-    test("(3 pts) Testing the addNewQuestion function", () => {
+    test("Testing the addNewQuestion function", () => {
         expect(
             addNewQuestion([], 142, "A new question", "short_answer_question"),
         ).toEqual([NEW_BLANK_QUESTION]);
@@ -666,7 +666,7 @@ describe("Testing the Question[] functions", () => {
         ).toEqual([...TRIVIA_QUESTIONS, NEW_TRIVIA_QUESTION]);
     });
 
-    test("(3 pts) Testing the renameQuestionById function", () => {
+    test("Testing the renameQuestionById function", () => {
         expect(renameQuestionById(BLANK_QUESTIONS, 1, "New Name")).toEqual([
             {
                 id: 1,
@@ -777,7 +777,7 @@ describe("Testing the Question[] functions", () => {
         ]);
     });
 
-    test("(3 pts) Test the changeQuestionTypeById function", () => {
+    test("Test the changeQuestionTypeById function", () => {
         expect(
             changeQuestionTypeById(
                 BLANK_QUESTIONS,
@@ -901,7 +901,7 @@ describe("Testing the Question[] functions", () => {
         ]);
     });
 
-    test("(3 pts) Testing the editOption function", () => {
+    test("Testing the addEditQuestionOption function", () => {
         expect(editOption(BLANK_QUESTIONS, 1, -1, "NEW OPTION")).toEqual([
             {
                 id: 1,
@@ -1095,7 +1095,7 @@ describe("Testing the Question[] functions", () => {
         ]);
     });
 
-    test("(3 pts) Testing the duplicateQuestionInArray function", () => {
+    test("Testing the duplicateQuestionInArray function", () => {
         expect(duplicateQuestionInArray(BLANK_QUESTIONS, 1, 27)).toEqual([
             {
                 id: 1,
