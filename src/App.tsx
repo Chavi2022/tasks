@@ -20,7 +20,7 @@ function App(): React.JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                UD CISC275 with React Hooks and TypeScript
+                UD CISC275 with React Hooks and TypeScript-Luis Infantes
             </header>
             {/* headers */}
             <h1>This is header text</h1>
